@@ -1,36 +1,21 @@
-# Creative UI Lab 🧪
+# Python Visualizer Framework 🐍
 
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
-![Status](https://img.shields.io/badge/Status-Active-success)
+![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python)
+![GUI](https://img.shields.io/badge/GUI-CustomTkinter-green)
+![Status](https://img.shields.io/badge/Status-Stable-success)
 
-**Creative UI Lab** is a cross-platform repository dedicated to exploring the art of programming through visual interfaces, algorithmic animations, and modern UI components.
+The **Python Visualizer Framework** is a lightweight, modular engine built with `CustomTkinter` designed to host, visualize, and hot-reload graphical experiments.
 
-This project serves as a centralized playground (Monorepo) for implementing creative coding experiments using different technologies (**Python, React, Flutter**, etc.).
+It acts as a container application that dynamically loads external Python scripts (plugins) into a main viewport, allowing developers to iterate on UI/UX and animation code without restarting the application.
 
-## 📂 Collection
+## ✨ Core Features
 
-| Module | Tech Stack | Description | Status |
-| :--- | :--- | :--- | :--- |
-| **[Python Visualizer](./python)** | Python, CustomTkinter | A modular engine for rendering particle systems (Fireworks, Sakura) with hot-reload capabilities. | 🟢 Ready |
-| **[React Motion](./web-react)** | React, TypeScript | *[Coming Soon]* Web-based interactive UI components. | ⚪ Planned |
-| **[Flutter Canvas](./flutter-dart)** | Dart, Flutter | *[Coming Soon]* High-performance mobile animations. | ⚪ Planned |
+* **Dynamic Module Loading**: Automatically scans the `plugins/` directory and lists available effects.
+* **Hot Reload System**: Edit your plugin code while the app is running and click **"Reload Code"** to see changes instantly.
+* **Lifecycle Management**: Handles setup (`__init__`) and cleanup (`teardown`) to prevent memory leaks or ghost threads between effect switches.
+* **Focus Mode**: Toggle the sidebar (Press `Esc`) to view animations in full distraction-free mode.
+* **Adaptive UI**: Built on `CustomTkinter` with a modern dark theme and responsive grid layout.
 
-## 🚀 Concept & Goals
+## 📂 System Architecture
 
-* **Modular Architecture**: Each effect is a standalone plugin that can be loaded dynamically.
-* **Visual Algorithms**: focusing on particle physics, trigonometry-based animations, and generative art.
-* **Clean Code**: Emphasizing readability and standard design patterns.
-
-## 🤝 Contributing
-
-Contributions are welcome! If you have a cool animation idea:
-1.  Fork the repo.
-2.  Create a new effect in the respective language folder.
-3.  Submit a Pull Request.
-
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
-**Created by [Zedow-learnCode](https://github.com/Zedow-learnCode)**
+The application is structured around a "Host-Plugin" relationship:
