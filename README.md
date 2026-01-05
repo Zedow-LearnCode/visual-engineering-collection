@@ -1,36 +1,31 @@
-# Creative UI Lab 🧪
+# Python UI Visualizer 🐍
 
-![License](https://img.shields.io/badge/License-MIT-lightgrey)
-![Status](https://img.shields.io/badge/Status-Active-success)
+![Python](https://img.shields.io/badge/Python-3.x-blue?logo=python)
+![CustomTkinter](https://img.shields.io/badge/GUI-CustomTkinter-green)
 
-**Creative UI Lab** is a cross-platform repository dedicated to exploring the art of programming through visual interfaces, algorithmic animations, and modern UI components.
+A modular Python framework built with `CustomTkinter` that allows developers to write, visualize, and **hot-reload** UI effects and animations without restarting the application.
 
-This project serves as a centralized playground (Monorepo) for implementing creative coding experiments using different technologies (**Python, React, Flutter**, etc.).
+## ✨ Key Features
 
-## 📂 Collection
+* **Hot Reloading**: Edit your plugin code (`.py`) and click "Reload" to see changes instantly.
+* **Focus Mode**: A distraction-free mode to view animations on full screen.
+* **Plugin System**: Automatically detects and lists scripts from the `plugins/` directory.
 
-| Module | Tech Stack | Description | Status |
-| :--- | :--- | :--- | :--- |
-| **[Python Visualizer](./python)** | Python, CustomTkinter | A modular engine for rendering particle systems (Fireworks, Sakura) with hot-reload capabilities. | 🟢 Ready |
-| **[React Motion](./web-react)** | React, TypeScript | *[Coming Soon]* Web-based interactive UI components. | ⚪ Planned |
-| **[Flutter Canvas](./flutter-dart)** | Dart, Flutter | *[Coming Soon]* High-performance mobile animations. | ⚪ Planned |
+## 📦 Installation
 
-## 🚀 Concept & Goals
+1.  Navigate to the python directory:
+    ```bash
+    cd python
+    ```
 
-* **Modular Architecture**: Each effect is a standalone plugin that can be loaded dynamically.
-* **Visual Algorithms**: focusing on particle physics, trigonometry-based animations, and generative art.
-* **Clean Code**: Emphasizing readability and standard design patterns.
+2.  Install dependencies:
+    ```bash
+    pip install -r requirements.txt
+    ```
 
-## 🤝 Contributing
+## 🎮 Usage
 
-Contributions are welcome! If you have a cool animation idea:
-1.  Fork the repo.
-2.  Create a new effect in the respective language folder.
-3.  Submit a Pull Request.
+Run the main application:
 
-## 📝 License
-
-This project is licensed under the MIT License.
-
----
-**Created by [Zedow-learnCode](https://github.com/Zedow-learnCode)**
+```bash
+python main.py
