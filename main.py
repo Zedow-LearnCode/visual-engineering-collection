@@ -14,7 +14,7 @@ PLUGINS_DIR = "plugins"
 class App(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("Python Visualizer")
+        self.title("Zedow Learn Code")
 
         self.after(0, lambda: self.state("zoomed"))
 
@@ -154,3 +154,4 @@ class App(ctk.CTk):
 if __name__ == "__main__":
     app = App()
     app.mainloop()
+
